@@ -1,0 +1,363 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-28 08:21+0000\n"
+"PO-Revision-Date: 2018-03-07 10:50+0000\n"
+"Last-Translator: Tonni Tølbøll Lund <ta@quickpay.net>\n"
+"Language-Team: Danish <http://translate.quickpay.net/projects/quickpay"
+"/standard-branding/da/>\n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
+
+#: templates/form.liquid:11
+msgid "Other Payment Methods"
+msgstr "Andre betalingsmetoder"
+
+#: templates/form.liquid:16
+msgid "Cards"
+msgstr "Kort"
+
+#: templates/waiting.liquid:7
+msgid "Please wait..."
+msgstr "Vent venligst..."
+
+#: templates/waiting.liquid:11
+msgid "The process may take up to 5 minutes."
+msgstr "Processen kan tage op til 5 minutter."
+
+#: templates/waiting.liquid:11
+msgid "Click here if processing takes a long time"
+msgstr "Klik her hvis processen tager for lang tid"
+
+#: templates/form/3d_secure.liquid:13
+msgid "Starting 3D Secure payment. Please wait..."
+msgstr "Starter 3D Secure betaling. Vent venligst..."
+
+#: templates/form/sofort_ideal.liquid:15 templates/form/trustly_ideal.liquid:9
+msgid "When you click the button below, the iDeal payment window will open."
+msgstr "iDeal betalingsvinduet åbner, når du klikker på knappen herunder."
+
+#: templates/form/sofort_ideal.liquid:16 templates/form/trustly.liquid:10
+#: templates/form/paypal.liquid:12 templates/form/bitcoin.liquid:28
+#: templates/form/trustly_ideal.liquid:10 templates/form/viabill.liquid:12
+#: templates/form/sofort.liquid:9 templates/form/mobilepay.liquid:14
+msgid "When finished, you will be redirected back to your receipt."
+msgstr "Når betaligen er gennemført, kommer du retur til din kvittering."
+
+#: templates/form/sofort_ideal.liquid:17 templates/form/trustly.liquid:11
+#: templates/form/swipp.liquid:9 templates/form/paypal.liquid:13
+#: templates/form/trustly_ideal.liquid:11 templates/form/viabill.liquid:13
+#: templates/form/sofort.liquid:10 templates/form/mobilepay.liquid:15
+msgid "Proceed to payment"
+msgstr "Fortsæt til betaling"
+
+#: templates/form/sofort_ideal.liquid:32
+msgid "Bank"
+msgstr "Bank"
+
+#: templates/form/sofort_ideal.liquid:43 templates/form/trustly.liquid:47
+#: templates/form/vipps.liquid:19 templates/form/klarna.liquid:102
+#: templates/form/trustly_ideal.liquid:47 templates/form/swish.liquid:19
+#: templates/form_dankort_acs.liquid:35
+msgid "Proceed"
+msgstr "Fortsæt"
+
+#: templates/form/trustly.liquid:9
+msgid "When you click the button below, the Trustly payment window will open."
+msgstr "Trustly betalingsvinduet åbner, når du klikker på knappen herunder."
+
+#: templates/form/trustly.liquid:26 templates/form/trustly_ideal.liquid:26
+msgid "First name"
+msgstr "Fornavn"
+
+#: templates/form/trustly.liquid:33 templates/form/trustly_ideal.liquid:33
+msgid "Last name"
+msgstr "Efternavn"
+
+#: templates/form/trustly.liquid:40 templates/form/trustly_ideal.liquid:40
+msgid "Email"
+msgstr "Email"
+
+#: templates/form/vipps.liquid:12 templates/form/swish.liquid:12
+msgid "Mobile number"
+msgstr "Mobilnummer"
+
+#: templates/form/swipp.liquid:3
+msgid "When you click the button below, the Swipp payment window will open. When finished, you will be redirected back to your receipt."
+msgstr "Swipp betalingsvinduet åbner, når du klikker på knappen herunder. Når betaligen er gennemført, kommer du retur til din kvittering."
+
+#: templates/form/klarna.liquid:24
+msgid "Gender"
+msgstr "Køn"
+
+#: templates/form/klarna.liquid:26
+msgid "Male"
+msgstr "Mand"
+
+#: templates/form/klarna.liquid:27
+msgid "Female"
+msgstr "Kvinde"
+
+#: templates/form/klarna.liquid:31 templates/form/klarna.liquid:67
+msgid "Country"
+msgstr "Land"
+
+#: templates/form/klarna.liquid:37 templates/form/klarna.liquid:73
+msgid "Denmark"
+msgstr "Danmark"
+
+#: templates/form/klarna.liquid:39 templates/form/klarna.liquid:75
+msgid "Sweden"
+msgstr "Sverige"
+
+#: templates/form/klarna.liquid:41 templates/form/klarna.liquid:77
+msgid "Norway"
+msgstr "Norge"
+
+#: templates/form/klarna.liquid:43 templates/form/klarna.liquid:79
+msgid "Finland"
+msgstr "Finland"
+
+#: templates/form/klarna.liquid:45 templates/form/klarna.liquid:81
+msgid "Netherlands"
+msgstr "Holland"
+
+#: templates/form/klarna.liquid:47 templates/form/klarna.liquid:83
+msgid "Germany"
+msgstr "Tyskland"
+
+#: templates/form/klarna.liquid:49 templates/form/klarna.liquid:85
+msgid "Austria"
+msgstr "Østrig"
+
+#: templates/form/klarna.liquid:58
+msgid "Social security number"
+msgstr "CPR-nummer"
+
+#: templates/form/klarna.liquid:94
+msgid "Company Registration Number"
+msgstr "CVR"
+
+#: templates/form/paypal.liquid:11
+msgid "When you click the button below, the PayPal payment window will open."
+msgstr "PayPal betalingsvinduet åbner, når du klikker på knappen herunder."
+
+#: templates/form/bitcoin.liquid:21
+msgid "The Bitcoin address was copied to your clipboard."
+msgstr "Bitcoin adressen blev kopieret til udklipsholderen."
+
+#: templates/form/bitcoin.liquid:21
+msgid "Could not copy the Bitcoin address to your clipboard"
+msgstr "Kunne ikke kopiere Bitcoin adressen til din udklipsholder"
+
+#: templates/form/bitcoin.liquid:26
+msgid "Open in wallet"
+msgstr "Åben i tegnebog"
+
+#: templates/form/viabill.liquid:11
+msgid "When you click the button below, the ViaBill payment window will open."
+msgstr "ViaBill betalingsvinduet åbner, når du klikker på knappen herunder."
+
+#: templates/form/sofort.liquid:8
+msgid "When you click the button below, the Sofort payment window will open."
+msgstr "Sofort betalingsvinduet åbner, når du klikker på knappen herunder."
+
+#: templates/form/error.liquid:14
+msgid "An error happened."
+msgstr "Der skete en fejl."
+
+#: templates/form/error.liquid:14 templates/error.liquid:13
+#: templates/error.liquid:17
+msgid "Please try again."
+msgstr "Prøv venligst igen."
+
+#: templates/form/error.liquid:16
+msgid "You tried to make a live payment on a test transaction."
+msgstr "Du har forsøgt at gennemføre en rigtig betaling på en testbetaling."
+
+#: templates/form/error.liquid:18
+msgid "You tried to make a test payment on a live transaction."
+msgstr "Du har forsøgt at gennemføre en rigtig betaling på en testbetaling."
+
+#: templates/form/card.liquid:15
+msgid "Name on card"
+msgstr "Navn på kortet"
+
+#: templates/form/card.liquid:23
+msgid "Card number"
+msgstr "Kortnummer"
+
+#: templates/form/card.liquid:33
+msgid "Expiration date"
+msgstr "Udløbsdato"
+
+#: templates/form/card.liquid:56
+msgid "The CVV/CVD increases the level of security. Usually the card verification data is a three digit number, placed at the backside of the card."
+msgstr "CVV/CVD (kontrolcifre) på kortet er med til højne sikkerheden. Koden findes normalt på bagsiden af kortet og består af tre cifre."
+
+#: templates/form/card.liquid:64
+msgid "Enable 3D Secure"
+msgstr "Aktiver 3D Secure"
+
+#: templates/form/card.liquid:70
+msgid "3D Secure is a 2 step verification service using a text message to your phone."
+msgstr "3D Secure er en to-trins godkendelse ved hjælp af en tekstbesked til din telefon."
+
+#: templates/form/card.liquid:71
+msgid "Your credit card issuer may require you to use 3D Secure as an extra precaution."
+msgstr "Din kortudsteder kan som en ekstra sikkerhed kræve, at du bruger 3D Secure."
+
+#: templates/form/card.liquid:79
+msgid "Pay"
+msgstr "Betal"
+
+#: templates/form/card.liquid:81
+msgid "Create subscription"
+msgstr "Opret abonnement"
+
+#: templates/form/card.liquid:83
+msgid "Save card"
+msgstr "Gem kort"
+
+#: templates/form/card.liquid:85
+msgid "Receive"
+msgstr "Modtag"
+
+#: templates/form/card.liquid:91
+msgid "Payment fee"
+msgstr "Gebyr"
+
+#: templates/form/card.liquid:91
+msgid "Fill in card number"
+msgstr "Udfyld kortnummer"
+
+#: templates/form/mobilepay.liquid:13
+msgid "When you click the button below, the MobilePay payment window will open."
+msgstr "MobilePay betalingsvinduet åbner, når du klikker på knappen herunder."
+
+#: templates/cancelled.liquid:7
+msgid "You have cancelled the payment"
+msgstr "Du har annulleret betalingen"
+
+#: templates/order_info.liquid:4
+msgid "Order number"
+msgstr "Ordrenummer"
+
+#: templates/order_info.liquid:6
+msgid "expires in"
+msgstr "udløber om"
+
+#: templates/success.liquid:8
+msgid "You have completed the payout"
+msgstr "Du har gennemført udbetalingen"
+
+#: templates/success.liquid:10
+msgid "You have completed the payment"
+msgstr "Du har gennemført betalingen"
+
+#: templates/layout.liquid:22
+msgid "Are you about to abort the payment. Are you sure?"
+msgstr "Er du sikker på du vil annullere din betaling?"
+
+#: templates/layout.liquid:22
+msgid "Cancel Payment"
+msgstr "Annuller betaling"
+
+#: templates/deadline.liquid:7
+msgid "Order expired"
+msgstr "Ordre udløbet"
+
+#: templates/deadline.liquid:11
+msgid "You did not finish the purchase within the time frame."
+msgstr "Du har ikke gennemført betalingen inden for tidsrammen."
+
+#: templates/deadline.liquid:13
+msgid "Click here to continue"
+msgstr "Klik her for at fortsætte"
+
+#: templates/error.liquid:9
+msgid "The order is already paid."
+msgstr "Ordren er allerede betalt."
+
+#: templates/error.liquid:11
+msgid "Continue to the shop"
+msgstr "Fortsæt til butikken"
+
+#: templates/error.liquid:13
+msgid "An unknown error happened."
+msgstr "Der skete en fejl."
+
+#: templates/error.liquid:15
+msgid "Unable to complete payment"
+msgstr "Betalingen kan ikke gennemføres"
+
+#: templates/error.liquid:17 templates/error.liquid:19
+msgid "3D Secure authorization failed."
+msgstr "3D Secure autorisationen fejlede."
+
+#: templates/error.liquid:19 templates/error.liquid:21
+msgid "Please try again or select another payment method."
+msgstr "Prøv venligst igen eller vælg en anden betalingsmetode."
+
+#: templates/error.liquid:21
+msgid "3D Secure enrollment failed."
+msgstr "3D Secure tilmelding fejlede."
+
+#: templates/error.liquid:23
+msgid "The payment details have changed since you initiated the payment."
+msgstr "Betalingsdetaljerne har ændret sig, siden du påbegyndte betalingen."
+
+#: templates/error.liquid:25
+msgid "Click here to start over"
+msgstr "Klik her for at starte forfra"
+
+#: templates/error.liquid:36
+msgid "Try again"
+msgstr "Prøv igen"
+
+#: templates/form_dankort_acs.liquid:4
+msgid "When you click the button below, the Dankort payment window will open. When finished, you will be redirected back to your receipt."
+msgstr "Dankort betalingsvinduet åbner, når du klikker på knappen herunder. Når betaligen er gennemført, kommer du retur til din kvittering."
+
+#, fuzzy
+#~ msgid "German"
+#~ msgstr "Tyskland"
+
+#, fuzzy
+#~ msgid "Norwegian"
+#~ msgstr "Norge"
+
+#, fuzzy
+#~ msgid "Swedish"
+#~ msgstr "Sverige"
+
+#~ msgid "Please try again or select another payment option."
+#~ msgstr "Prøv venligst igen eller vælg en anden betalingsmetode."
+
+#~ msgid "Payment type"
+#~ msgstr "Betalingsmetode"
+
+#~ msgid "Payment"
+#~ msgstr "Betaling"
+
+#~ msgid "Card on file"
+#~ msgstr "Gemt kort"
+
+#~ msgid "Order amount"
+#~ msgstr "Ordrebeløb"
+
+#~ msgid "Fill in form"
+#~ msgstr "Udfyld formularen"
+
+#~ msgid "Total"
+#~ msgstr "Total"
