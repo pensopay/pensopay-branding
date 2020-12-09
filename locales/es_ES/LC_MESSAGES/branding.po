@@ -8,15 +8,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-28 08:21+0000\n"
-"PO-Revision-Date: 2020-04-08 21:47+0000\n"
-"Last-Translator: Johan Færch <jf@quickpay.net>\n"
-"Language-Team: Spanish <http://translate.quickpay.net/projects/quickpay/standard-branding/es/>\n"
+"PO-Revision-Date: 2020-11-12 10:15+0000\n"
+"Last-Translator: Thomas <tj@pil.dk>\n"
+"Language-Team: Spanish <https://translate.quickpay.net/projects/quickpay/"
+"standard-branding/es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n % 10 == 1) ? 0 : ((n % 10 == 2) ? 1 : ((n % 100 == 0 || n % 100 == 20 || n % 100 == 40 || n % 100 == 60 || n % 100 == 80) ? 2 : 3));\n"
-"X-Generator: Weblate 3.7.1\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1) ? 0 : ((n % 10 == 2) ? 1 : (("
+"n % 100 == 0 || n % 100 == 20 || n % 100 == 40 || n % 100 == 60 || n % 100 "
+"== 80) ? 2 : 3));\n"
+"X-Generator: Weblate 4.3.1\n"
 
 #: templates/form.liquid:11
 msgid "Other Payment Methods"
@@ -67,18 +70,22 @@ msgstr "Al hacer clic en el botón de abajo, se abrirá la ventana de pago Sofor
 #: templates/form/resurs.liquid:27 templates/form/sofort_ideal.liquid:16
 #: templates/form/paysafecard.liquid:12 templates/form/trustly.liquid:10
 #: templates/form/vipps.liquid:14 templates/form/paypal.liquid:12
-#: templates/form/bitcoin.liquid:28 templates/form/trustly_ideal.liquid:10
-#: templates/form/viabill.liquid:12 templates/form/sofort.liquid:9
-#: templates/form/klarnapayments.liquid:10 templates/form/mobilepay.liquid:14
+#: templates/form/bitcoin.liquid:28
+#: templates/form/mobilepay_subscriptions.liquid:11
+#: templates/form/trustly_ideal.liquid:10 templates/form/viabill.liquid:12
+#: templates/form/sofort.liquid:9 templates/form/klarnapayments.liquid:10
+#: templates/form/mobilepay.liquid:14
 msgid "When finished, you will be redirected back to your receipt."
 msgstr "Cuando termine, será redirigido de nuevo a su recibo."
 
 #: templates/form/resurs.liquid:28 templates/form/sofort_ideal.liquid:17
 #: templates/form/paysafecard.liquid:13 templates/form/trustly.liquid:11
 #: templates/form/vipps.liquid:15 templates/form/swipp.liquid:9
-#: templates/form/paypal.liquid:13 templates/form/trustly_ideal.liquid:11
-#: templates/form/viabill.liquid:13 templates/form/sofort.liquid:10
-#: templates/form/klarnapayments.liquid:11 templates/form/mobilepay.liquid:15
+#: templates/form/paypal.liquid:13
+#: templates/form/mobilepay_subscriptions.liquid:12
+#: templates/form/trustly_ideal.liquid:11 templates/form/viabill.liquid:13
+#: templates/form/sofort.liquid:10 templates/form/klarnapayments.liquid:11
+#: templates/form/mobilepay.liquid:15
 msgid "Proceed to payment"
 msgstr "Proceder al pago"
 
@@ -91,8 +98,8 @@ msgstr "Al hacer clic en el botón de abajo, se abrirá la ventana de pago de Vi
 msgid "Bank"
 msgstr "Banco"
 
-#: templates/form/sofort_ideal.liquid:43 templates/form/trustly.liquid:47
-#: templates/form/klarna.liquid:102 templates/form/trustly_ideal.liquid:47
+#: templates/form/sofort_ideal.liquid:43 templates/form/trustly.liquid:40
+#: templates/form/klarna.liquid:102 templates/form/trustly_ideal.liquid:40
 #: templates/form/swish.liquid:19 templates/form_dankort_acs.liquid:35
 msgid "Proceed"
 msgstr "Seguir"
@@ -114,10 +121,6 @@ msgstr ""
 #: templates/form/trustly.liquid:33 templates/form/trustly_ideal.liquid:33
 msgid "Last name"
 msgstr ""
-
-#: templates/form/trustly.liquid:40 templates/form/trustly_ideal.liquid:40
-msgid "Email"
-msgstr "Email"
 
 #: templates/form/vipps.liquid:13
 #, fuzzy
@@ -196,6 +199,11 @@ msgstr ""
 msgid "Open in wallet"
 msgstr ""
 
+#: templates/form/mobilepay_subscriptions.liquid:10
+#, fuzzy
+msgid "When you click the button below, the MobilePay Subscriptions window will open."
+msgstr "Al hacer clic en el botón de abajo, se abrirá la ventana de pago de MobilePay."
+
 #: templates/form/swish.liquid:12
 #, fuzzy
 msgid "Mobile number"
@@ -236,7 +244,7 @@ msgstr "Número de tarjeta"
 
 #: templates/form/card.liquid:33
 msgid "Expiration date"
-msgstr "Fecha de caducidad"
+msgstr "Caducidad"
 
 #: templates/form/card.liquid:56
 msgid "The CVV/CVD increases the level of security. Usually the card verification data is a three digit number, placed at the backside of the card."
@@ -309,7 +317,8 @@ msgid "You have completed the payment"
 msgstr "Ha completado el pago"
 
 #: templates/layout.liquid:22
-msgid "Are you about to abort the payment. Are you sure?"
+#, fuzzy
+msgid "You are about to abort the payment. Are you sure?"
 msgstr "Está a punto de abortar el pago. ¿Seguro?"
 
 #: templates/layout.liquid:22
@@ -371,6 +380,9 @@ msgstr "Inténtalo de nuevo"
 #: templates/form_dankort_acs.liquid:4
 msgid "When you click the button below, the Dankort payment window will open. When finished, you will be redirected back to your receipt."
 msgstr "Al hacer clic en el botón de abajo, se abrirá la ventana de pago de Dankort. Cuando termine, será redirigido de nuevo a su recibo."
+
+#~ msgid "Email"
+#~ msgstr "Email"
 
 #, fuzzy
 #~ msgid "German"
