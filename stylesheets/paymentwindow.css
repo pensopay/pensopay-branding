@@ -79,8 +79,8 @@ a.btn, button[type="submit"] {
 }
  
 .btn-info:hover, .btn-info:focus {
-    background-color: #05940c;
-    border: 0px;
+  background-color: #05940c;
+  border: 0px;
 }
 
 /*
@@ -171,12 +171,12 @@ a.btn, button[type="submit"] {
   width: 100%;
   height: 40px;
   line-height: 40px;
-  background: #1b3862;
+  background: #4A404C;
   color: #fff;
   z-index: 999;
 }
 #footer #bottom-bar img {
-  height: 24px;
+  height: 38px;
 }
 
 
@@ -354,9 +354,9 @@ a.btn, button[type="submit"] {
 }
 
 .bubble:before {
-    top: -15px;
-    z-index: 1;
-    border-bottom-color: #acbdc7;
+  top: -15px;
+  z-index: 1;
+  border-bottom-color: #acbdc7;
 }
 
 .bubble.bubble-cvd:before,
@@ -382,9 +382,9 @@ img.icon {
 }
 
 img.icon-rotate {
-    -webkit-animation:spin 3s linear infinite;
-    -moz-animation:spin 3s linear infinite;
-    animation:spin 3s linear infinite;
+  -webkit-animation:spin 3s linear infinite;
+  -moz-animation:spin 3s linear infinite;
+  animation:spin 3s linear infinite;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
@@ -495,4 +495,10 @@ h4 img.icon {
   margin: 12px 0;
   width: 100%;
   height: 42px;
+}
+
+.beige-bg {
+  background-color: #F6F5ED;
+  border-top: 1px solid #F6F5ED;
+  border-bottom: 1px solid #F6F5ED;
 }
