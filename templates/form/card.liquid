@@ -10,12 +10,14 @@
 
       <div class="col-sm-8 col-sm-pull-4 col-xs-12">
         {% if config.enable_card_holder_field %}
-          <div class="form-group">
-            <div class="col-xs-12">
-              <label for="cardholder" class="control-label">{% t Name on card %}</label>
-              <input type="text" id="cardholder" name="cardholder" class="form-control" autocomplete="cc-name" autofocus="autofocus" {% if config.enable_prefill_name %}value="{{ model.name_on_card }}"{% endif %}>
+          {% unless model.moto %}
+            <div class="form-group">
+              <div class="col-xs-12">
+                <label for="cardholder" class="control-label">{% t Name on card %}</label>
+                <input type="text" id="cardholder" name="cardholder" class="form-control" autocomplete="cc-name" autofocus="autofocus" {% if config.enable_prefill_name %}value="{{ model.name_on_card }}"{% endif %}>
+              </div>
             </div>
-          </div>
+          {% endunless %}
         {% endif %}
 
         <div class="form-group has-feedback">
@@ -24,6 +26,24 @@
             <input type="tel" id="cardnumber" name="cardnumber" class="form-control" autocomplete="cc-number" {% unless config.enable_card_holder_field %} autofocus="autofocus" {% endunless %} aria-describedby="cardnumberSuccess" pattern="[0-9\s]*" data-mask="#" inputmode="numeric">
             <span id="cardnumber-check" class="form-control-feedback" aria-hidden="true" style="display: none"><img class="check-icon" src="{{ images.check.svg }}" alt="Checkmark"></span>
             <span id="cardnumber-sr" class="sr-only">(success)</span>
+          </div>
+        </div>
+
+        <div id="brand-selector" class="form-group has-feedback" style="display: none;">
+          <div class="col-xs-12">
+            <span>{% t Card type %}:</span>
+            <div class="inline-option">
+              <input type="radio" name="brand" id="cardbrandVisa" value="visa">
+              <label for="cardbrandVisa">
+                Visa
+              </label>
+            </div>
+            <div class="inline-option">
+              <input type="radio" name="brand" id="cardbrandDankort" value="dankort">
+              <label for="cardbrandDankort">
+                Dankort
+              </label>
+            </div>
           </div>
         </div>
 
@@ -45,10 +65,12 @@
           </div>
 
           <div class="col-xs-6">
-            <label for="cvd" id="cvd-label" class="control-label">CVV/CVD</label> <img class="icon clickable" style="margin-bottom: 3px" src="{{ images.question-circle.svg }}" alt="CVV/CVD" data-toggle="#cvd-help">
-            <input type="tel" id="cvd" name="cvd" class="form-control" autocomplete="cc-csc" aria-describedby="cvd" maxlength="4" pattern="[0-9]*" data-mask="9999" inputmode="numeric">
-            <span id="cvd-check" class="form-control-feedback" aria-hidden="true" style="display: none"><img class="check-icon" src="{{ images.check.svg }}" alt="Checkmark"></span>
-            <span id="cvd-sr" class="sr-only">(success)</span>
+            {% unless model.moto %}
+              <label for="cvd" id="cvd-label" class="control-label">CVV/CVD</label> <img class="icon clickable" style="margin-bottom: 3px" src="{{ images.question-circle.svg }}" alt="CVV/CVD" data-toggle="#cvd-help">
+              <input type="tel" id="cvd" name="cvd" class="form-control" autocomplete="cc-csc" aria-describedby="cvd" maxlength="4" pattern="[0-9]*" data-mask="9999" inputmode="numeric">
+              <span id="cvd-check" class="form-control-feedback" aria-hidden="true" style="display: none"><img class="check-icon" src="{{ images.check.svg }}" alt="Checkmark"></span>
+              <span id="cvd-sr" class="sr-only">(success)</span>
+            {% endunless %}
           </div>
         </div>
 
@@ -93,6 +115,10 @@
               <p id="fee" class="text-center">
                 {% t Payment fee %}: <span id="fee-field"><i>{% t Fill in card number %}</i></span>
               </p>
+            {% endif %}
+
+            {% if config.reservation_notice %}
+              <div class="reservation-notice">{{ config.reservation_notice }}</div>
             {% endif %}
           </div>
         </div>
